@@ -9,4 +9,4 @@
 
 #include "Constants.h"
 
-CaptureSize captureSize = MEDIUM_FRONT;
+CaptureSize captureSize = LARGE_FRONT;

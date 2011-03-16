@@ -51,9 +51,8 @@ char* VideoProcessor::setFrameImage(int width, int height, int size, char* imgDa
     
     //Change the function used to process the image.
     
-    //return adaptiveThreshold(frameImage);
-    
-    return close(frameImage);
+    return adaptiveThreshold(frameImage);
+    //return close(frameImage);
     //return erode(frameImage);
     //return canny(frameImage);
 
@@ -97,8 +96,8 @@ char* adaptiveThreshold(IplImage* frameImage)
     int type =  CV_THRESH_BINARY;           //CV_THRESH_BINARY_INV; 
     int method = CV_ADAPTIVE_THRESH_MEAN_C; //CV_ADAPTIVE_THRESH_GAUSSIAN_C; 
     
-    int blockSize = 73; 
-    double offset = 15; 
+    int blockSize = 173; 
+    double offset = 1; 
     
     cvAdaptiveThreshold(grayTex, grayTemp, 255, method, type, blockSize, offset); 
     

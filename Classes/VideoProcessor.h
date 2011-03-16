@@ -7,6 +7,9 @@
  *
  */
 
+#ifndef VIDEOPROCESSOR_H
+#define VIDEOPROCESSOR_H
+
 class VideoProcessor 
 {
     public:
@@ -14,3 +17,5 @@ class VideoProcessor
         char *setFrameImage(int width, int height, int size, char* imgData, int withStep);
         void freeConvertedImage();
 };
+
+#endif

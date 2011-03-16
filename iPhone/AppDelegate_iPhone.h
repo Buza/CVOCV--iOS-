@@ -1,21 +1,19 @@
 //
-//  CVOCV_IOSAppDelegate.h
-//  CVOCV_IOS
+//  AppDelegate_iPhone.h
+//  CVOCV-iOS
 //
-//  Created by buza on 3/14/11.
+//  Created by buza on 3/16/11.
 //  Copyright 2011 BuzaMoto. All rights reserved.
 //
 
-
-
 #import <UIKit/UIKit.h>
-
 
 @class CVOCV_IOSViewController;
 
-@interface CVOCV_IOSAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+@interface AppDelegate_iPhone : NSObject <UIApplicationDelegate> 
+{
     CVOCV_IOSViewController *viewController;
+    UIWindow *window;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

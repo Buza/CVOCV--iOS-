@@ -60,7 +60,7 @@
 
     mLayer = [CALayer layer];
     mLayer.frame = self.view.bounds;
-    mLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0, 0, 1);
+    //mLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0, 0, 1);
     mLayer.contentsGravity = kCAGravityResizeAspectFill;
 
     [self.view.layer addSublayer:mLayer];
@@ -89,7 +89,7 @@
        captureSize == MEDIUM_FRONT ||
        captureSize == LARGE_FRONT)
     {
-        mLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0, 0, 1);
+        //mLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0, 0, 1);
     }
     
     switch(captureSize)

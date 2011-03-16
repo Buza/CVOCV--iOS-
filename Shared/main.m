@@ -1,8 +1,8 @@
 //
 //  main.m
-//  CVOCV_IOS
+//  CVOCV-iOS
 //
-//  Created by buza on 3/14/11.
+//  Created by buza on 3/16/11.
 //  Copyright 2011 BuzaMoto. All rights reserved.
 //
 
